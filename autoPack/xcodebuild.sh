@@ -73,6 +73,12 @@ if [ -e $exportFilePath/$scheme_name.ipa ]; then
     cd ${exportFilePath}
     echo "*** 开始上传.ipa文件 ***"
     #此处上传分发应用
+#此处上传分发应用
+curl -F "file=@$exportFilePath/$scheme_name.ipa" \
+-F "uKey=272940f76e3572a5c197d25b295b5dac" \
+-F "_api_key=f26c7743a02e8303290886591ed06283" \
+https://www.pgyer.com/apiv1/app/upload
+
     echo "*** .ipa文件上传成功 ***"
 else
     echo "*** 创建.ipa文件失败 ***"
