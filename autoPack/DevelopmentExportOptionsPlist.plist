@@ -3,7 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>method</key>
-<!-- 	 enterprise   app-store  ad-hoc -->
+<!-- 	 enterprise   app-store  ad-hoc development -->
 	<string>enterprise</string>
+	<key>provisioningProfiles</key>
+  <dict>
+    <key>my.bundle.idenifier</key>
+    <string>My Provisioning Profile Name</string>
+  </dict>
+<!-- 	以下依情况添加 -->
+<!--    <key>teamID</key> 
+   <string>your teamID</string> -->
+   	<!-- 	iCloudContainerEnvironment = Production/Development is only required if you use CloudKit -->
+<!--    <key>iCloudContainerEnvironment </key>
+    <string> Production</string> -->
 </dict>
 </plist>
